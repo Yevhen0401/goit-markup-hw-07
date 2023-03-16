@@ -1,0 +1,44 @@
+.clients-item {
+    display: flex;
+    justify-content: center;
+}
+
+.clients-list {
+    width: 170px;
+    height: 92px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.clients-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover ,
+    &:focus {
+        border-color: var(--color-background-hover);
+    } 
+
+    &:hover svg,
+    &:focus svg {
+    fill: var(--color-background-hover);
+}
+
+}
+
+.clients-icon {
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+

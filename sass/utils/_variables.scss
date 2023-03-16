@@ -1,0 +1,15 @@
+:root {
+    --color-hover: #FFFFFF;
+    --color-background-hover: #2196F3;  
+    --color-background-hover-button: #F5F4FA; 
+    --color-item-adress: #757575;
+    --color-text: #212121;
+    }
+    
+ body {
+        background-color: var(--color-hover);
+        font-family: Roboto, sans-serif;
+        color: var(--color-text);
+        font-size: 14px;
+        letter-spacing: 0.03em;
+    }
