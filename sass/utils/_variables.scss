@@ -4,12 +4,9 @@
     --color-background-hover-button: #F5F4FA; 
     --color-item-adress: #757575;
     --color-text: #212121;
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --function-transition: cubic-bezier(0.4, 0, 0.2, 1);
     }
     
- body {
-        background-color: var(--color-hover);
-        font-family: Roboto, sans-serif;
-        color: var(--color-text);
-        font-size: 14px;
-        letter-spacing: 0.03em;
-    }
+ 

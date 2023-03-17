@@ -17,7 +17,7 @@
     height: 44px;
     border-radius: 50%;
     background-color: var(--color-hover);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--function-transition);
 
 &:hover,
 &:focus {
@@ -29,7 +29,7 @@
 
 .social-icon {
     fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms var(--function-transition);
 
 .social-link:hover &,
 .social-link:focus & {

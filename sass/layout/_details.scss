@@ -1,11 +1,16 @@
-.details-subtitle {
+.details-item {
+    display: flex;
+    margin-left: -30px;
+} 
+
+.details-item__subtitle {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     color: var(--color-item-adress);  
 }
 
-.details-title {
+.details-item__title {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -15,17 +20,12 @@
     margin-bottom: 10px;
 }
 
-.details-item {
-    display: flex;
-    margin-left: -30px;
-}
-
-.details-list {
+.details-item__list {
     flex-basis: calc((100% - 90px) / 4);
     margin-left: 30px; 
 }
 
-.details {
+.details-item__fon-icon {
     height: 120px;
     background-color: var(--color-background-hover-button);
     margin-bottom: 30px;

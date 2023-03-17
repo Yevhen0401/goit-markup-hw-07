@@ -21,7 +21,7 @@
     box-sizing: border-box;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms var(--function-transition);
 
     &:hover ,
     &:focus {
@@ -37,7 +37,7 @@
 
 .clients-icon {
     fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms var(--function-transition);
 }
 
 

@@ -22,3 +22,11 @@ a {
      padding-top: 94px;
      padding-bottom: 94px;
  }
+
+ body {
+    background-color: var(--color-hover);
+    font-family: var(--main-font);
+    color: var(--color-text);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
