@@ -4,8 +4,8 @@
   --color-background-hover-button: #F5F4FA;
   --color-item-adress: #757575;
   --color-text: #212121;
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   --function-transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -17,8 +17,7 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -121,6 +120,7 @@ span {
   background-color: var(--color-hover);
   transition: background-color 250ms var(--function-transition);
 }
+
 .social-link:hover, .social-link:focus {
   background-color: var(--color-background-hover);
 }
@@ -129,7 +129,9 @@ span {
   fill: #AFB1B8;
   transition: fill 250ms var(--function-transition);
 }
-.social-link:hover .social-icon, .social-link:focus .social-icon {
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
   fill: var(--color-hover);
 }
 
@@ -152,11 +154,13 @@ span {
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms var(--function-transition), visibility 250ms var(--function-transition);
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.6);
 }
@@ -191,6 +195,7 @@ span {
   cursor: pointer;
   transition: fill 250ms var(--function-transition);
 }
+
 .modal-close-btn:hover, .modal-close-btn:focus {
   fill: var(--color-background-hover);
 }
@@ -223,6 +228,7 @@ span {
   font-size: 16px;
   cursor: pointer;
 }
+
 .contact-form-input:focus {
   outline: none;
   border-color: var(--color-background-hover);
@@ -247,6 +253,7 @@ span {
   transform: translateY(-50%);
   transition: fill 250ms var(--function-transition);
 }
+
 .contact-form-input:focus + .contact-form-icon {
   fill: var(--color-background-hover);
 }
@@ -275,9 +282,7 @@ span {
   cursor: pointer;
   display: block;
 }
-.contact-form-message::-moz-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
+
 .contact-form-message::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
@@ -305,15 +310,17 @@ span {
   align-items: center;
   justify-content: center;
 }
+
 .contact-form-checkbox-label::before {
   display: block;
   width: 16px;
   height: 15px;
-  content: " ";
+  content: ' ';
   cursor: pointer;
   margin-right: 8px;
   background-image: url(../images/dont-checked.svg);
 }
+
 .contact-form-checkbox:checked + .contact-form-checkbox-label::before {
   background-image: url(../images/checked.svg);
   background-color: var(--color-background-hover);
@@ -323,6 +330,7 @@ span {
   background-size: contain;
   background-origin: border-box;
 }
+
 .contact-form-checkbox:focus + .contact-form-checkbox-label::before {
   outline: 0.5px solid rgba(33, 150, 243, 0.9);
 }
@@ -421,9 +429,11 @@ span {
   padding-bottom: 32px;
   transition: color 250ms var(--function-transition);
 }
+
 .link-nav:hover, .link-nav:focus {
   color: var(--color-background-hover);
 }
+
 .link-nav.current::after {
   content: "";
   position: absolute;
@@ -465,6 +475,7 @@ span {
   margin-right: 50px;
   transition: color 250ms var(--function-transition);
 }
+
 .auth-mail-link:hover, .auth-mail-link:focus {
   color: var(--color-background-hover);
 }
@@ -480,6 +491,7 @@ span {
   font-style: normal;
   transition: color 250ms var(--function-transition);
 }
+
 .auth-phone-link:hover, .auth-phone-link:focus {
   color: var(--color-background-hover);
 }
@@ -488,6 +500,7 @@ span {
   margin-right: 10px;
   fill: currentColor;
 }
+
 .icon:hover, .icon:focus {
   fill: var(--color-background-hover);
 }
@@ -521,6 +534,7 @@ span {
   margin-top: 20px;
   transition: color 250ms var(--function-transition);
 }
+
 .address-link:hover, .address-link:focus {
   color: var(--color-background-hover);
 }
@@ -539,6 +553,7 @@ span {
   font-style: normal;
   margin-top: 12px;
 }
+
 .address-mail:hover, .address-mail:focus {
   color: var(--color-background-hover);
 }
@@ -551,6 +566,7 @@ span {
   text-decoration: none;
   font-style: normal;
 }
+
 .address-phone:hover, .address-phone:focus {
   color: var(--color-background-hover);
 }
@@ -585,6 +601,7 @@ span {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms var(--function-transition);
 }
+
 .network-link:hover, .network-link:focus {
   background-color: var(--color-background-hover);
 }
@@ -704,6 +721,7 @@ span {
   width: 170px;
   height: 92px;
 }
+
 .clients-list:not(:last-child) {
   margin-right: 30px;
 }
@@ -719,10 +737,13 @@ span {
   border-radius: 4px;
   transition: border 250ms var(--function-transition);
 }
+
 .clients-link:hover, .clients-link:focus {
   border-color: var(--color-background-hover);
 }
-.clients-link:hover svg, .clients-link:focus svg {
+
+.clients-link:hover svg,
+.clients-link:focus svg {
   fill: var(--color-background-hover);
 }
 
@@ -814,6 +835,7 @@ span {
   border: 0;
   transition: background-color 250ms var(--function-transition), color 250ms var(--function-transition), box-shadow 250ms var(--function-transition);
 }
+
 .button-portfolio:hover, .button-portfolio:focus {
   background-color: var(--color-background-hover);
   color: var(--color-hover);
@@ -873,6 +895,7 @@ span {
   display: block;
   transition: box-shadow 250ms var(--function-transition);
 }
+
 .porfolio-link:hover, .porfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -899,4 +922,5 @@ span {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--color-item-adress);
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
